@@ -1,0 +1,61 @@
+.all-trees {
+  width: 90%; /* vzniknou okraje poo stranách */
+  display: flex;
+  flex-direction: row; /* komponenty budou v řádku - hlavní osa řádek*/
+  justify-content: center; /* zarovnání na střed po hlavní ose */
+  flex-wrap: wrap; /* zalamování*/
+  margin: 20px auto;
+}
+
+.one-tree {
+  width: 300px;
+  box-shadow: 0px 0px 20px rgb(230, 175, 175);
+  background-color: #802f3d;
+  color: antiquewhite;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0, 5s linear; /* plynulé zvětšení */
+}
+
+.one-tree:hover {
+  transform: scale(1.04); /* zvětšení */
+}
+
+.one-tree img {
+  object-fit: cover; /* ořízne obrázek a vyplní dnaý prstor*/
+  height: 200px; /*pevná výška*/
+  width: 100%; /* celá velikost one-tree*/
+}
+
+.one-tree h2 {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid antiquewhite;
+}
+
+.one-tree p {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* mezera mezi tlačítky */
+  margin-top: 20px;
+}
+
+.btn button {
+  flex: 1;
+  max-width: 200px;
+  padding: 10px;
+  font-size: 16px;
+}
